@@ -1,0 +1,71 @@
+\documentclass[answer, 12pt]{exam}
+
+% Mengubah Solution menjadi Jawaban
+\renewcommand{\solutiontitle}{\noindent\textbf{Jawaban:}\par\noindent}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% PAKET DI BAWAH INI KECUALI LIPSUM DIBUTUHKAN, PASTIKAN PAKET BERIKUT TERINSTALL %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{apacite} % mengatur gaya kutipan, dalam hal ini menggunakan gaya APA
+\usepackage{lipsum} % opsional, untuk membuat teks lorem ipsum, gunakan perintah \lipsum untuk membuat 
+%teks lorem ipsum
+\usepackage[indonesian]{babel}
+% \usepackage{newtxtext}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% PAKET DI ATAS KECUALI LIPSUM DIBUTUHKAN, PASTIKAN PAKET DI ATAS TERINSTALL %%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%% MEMBUAT HEADER %%%%%%%%%%%%%%%%%%
+\header{\bfseries Filsafat Ilmu\\Amika Wardana S.Sos., M.A. Ph.D}{}{\bfseries Ujian Akhir Semester\\ 
+\today} % membuat header
+\headrule % membuat garis di header
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%% MEMBUAT FOOTER %%%%%%%%%%%%%%%%%%
+\footer{\bfseries Nawan Tabah Pangestu}{\bfseries Halaman \thepage\ dari \numpages}{\bfseries 
+Pendidikan Sosiologi (B)} % membuat footer
+\footrule % membuat garis di footer
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%% SILAKAN MASUKKAN IDENTITAS SEPERTI NAMA, NIM, DAN PROGRAM STUDI %%%%%%%%%%%%%%%%%%
+\newcommand{\nama}{Nawan Tabah Pangestu}       %%%%%%%%%%%  MASUKKAN NAMA
+\newcommand{\NIM}{21413244035}                 %%%%%%%%%%%  MASUKKAN NOMOR INDUK MAHASISWA
+\newcommand{\prodi}{Pendidikan Sosiologi / B}  %%%%%%%%%%%  MASUKKAN NAMA PRODI DAN KELAS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BAGIAN ISI %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%% BAGIAN INI BERISI INPUT PERTANYAAN BESERTA JAWABAN %%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% FILE SOAL DAN JAWABAN TERDAPAT DI FOLDER "SOAL" %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+	\input{header}
+	
+	\begin{questions}
+		\input{soal/soal-pertama}
+		
+		\input{soal/soal-kedua}
+		
+		\input{soal/soal-ketiga}
+		
+		\input{soal/soal-keempat}
+		
+		\input{soal/soal-kelima}
+		% \input{soal/nama-file} % Ganti "nama-file" dengan nama file yang ingin ditambahkan
+		%%%%%%%%%%%%%%%%%%%%%%%%%% dan hapus tanda persen
+		
+	\end{questions}
+	
+	\pagebreak
+	\bibliographystyle{apacite} % atur gaya daftar pustaka, dalam hal ini menggunakan gaya APA
+	\renewcommand{\refname}{Daftar Pustaka} % ubah nama daftar pustaka dari 'References' menjadi 
+	%'Daftar Pustaka'
+	\bibliography{ref} % Membuat daftar pustaka, "ref_pancasila" merupakan nama file bibtex yang 
+	%berisi daftar pustaka
+\end{document}
+%%%%%%%%%%%%%%%%%%% INI ADALAH AKHIR KODE, JANGAN TAMBAHKAN APAPUN LAGI DIBAWAH %%%%%%%%%%%%%%%%%%%%%%
