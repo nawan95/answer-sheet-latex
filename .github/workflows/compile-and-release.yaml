@@ -26,7 +26,7 @@ jobs:
       - name: Compile LaTeX document to pdf
         uses: dante-ev/latex-action@latest
         with:
-          root_file: main.tex
+          root_file: answer-sheet.tex
           compiler: pdflatex
           args: -interaction=nonstopmode -shell-escape
 
@@ -34,7 +34,7 @@ jobs:
       - name: Bibtex
         uses: dante-ev/latex-action@latest
         with:
-          root_file: main
+          root_file: answer-sheet
           compiler: bibtex
           args:
           
